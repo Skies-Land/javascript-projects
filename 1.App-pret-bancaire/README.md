@@ -1,7 +1,8 @@
 # 🏦 CALCULATEUR DE PRÊT BANCAIRE
 
 ## 📖 Description
-Simulateur de **calculateur de prêt** à partir des valeurs sélectionnées par un utilisateur. 
+Simulateur de **calculateur de prêt** à partir des valeurs sélectionnées par un utilisateur.<br>
+Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)** 
 
 <img width="623" height="507" alt="Image" src="https://github.com/user-attachments/assets/92648308-3796-43e2-b2d4-944244d7748c" />
 
