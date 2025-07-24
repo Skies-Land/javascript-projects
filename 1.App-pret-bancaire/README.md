@@ -3,6 +3,8 @@
 ## 📖 Description
 Simulateur de **calculateur de prêt** à partir des valeurs sélectionnées par un utilisateur. 
 
+<img width="623" height="507" alt="Image" src="https://github.com/user-attachments/assets/92648308-3796-43e2-b2d4-944244d7748c" />
+
 ## 🔧 Fonctionnalités JavaScript
 Récupération des valeurs des deux **\<input type="range">** lorsqu'ils sont manipuler. <br>
 **Calcul** et **affichage** des différents informations liées au prêt en fonction des valeurs des inputs.
