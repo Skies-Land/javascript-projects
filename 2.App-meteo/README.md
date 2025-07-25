@@ -4,6 +4,8 @@
 Cette application affiche des données météo en simulant la réponse d'une API.  
 Un fichier `JSON` local est utilisé comme source de données pour reproduire le fonctionnement d'un appel API sans dépendre d'un service externe.
 
+<img width="301" height="324" alt="Image" src="https://github.com/user-attachments/assets/5981bb03-16d1-498d-b490-316e8ef446b1" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Lancemant d'un **appel** vers le **fichier** **`/weatherAPI/weatherData.json`** pour récupérer les données météo.
 2. Gestion des erreurs pouvant survenir lors de la récupération des données en affichant **un message générique sur l'interface**.
