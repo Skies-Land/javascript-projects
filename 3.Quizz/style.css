@@ -1,0 +1,10 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open sans, sans-serif;
+    color: #0e0e0e;
+}
