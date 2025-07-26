@@ -1,6 +1,6 @@
 const quizData = {
     responses: [
-        { id: "q1", answer: "a" },
+        { id: "q1", answer: "b" },
         { id: "q2", answer: "a" },
         { id: "q3", answer: "b" },
         { id: "q4", answer: "a" },
@@ -11,8 +11,8 @@ const quizData = {
             id: "q1",
             question: "Que signifie l'acronyme HTML ?",
             options: [
-                { value: "a", label: "HyperText Markup Language" },
-                { value: "b", label: "HighText Machine Language" },
+                { value: "a", label: "HighText Machine Language" },
+                { value: "b", label: "HyperText Markup Language" },
                 { value: "c", label: "Hyper Tool Multi Language" }
             ]
         },

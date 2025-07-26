@@ -4,6 +4,8 @@
 Application de quiz dynamique réalisée en pur HTML, CSS et JavaScript, permettant de tester ses connaissances avec un système de questions/réponses interactif et un affichage des résultats en temps réel.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)** 
 
+<img width="619" height="392" alt="Image" src="https://github.com/user-attachments/assets/2d23bf94-56f7-4784-9a6b-d624ebfc6c7a" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Importation des données qui permettront **d'afficher les questions et de tester les résultats** depuis le fichier **quizData.js**.
 2. Création des **différentes questions du formulaire** et leurs **boutons(input) radio** directement depuis JavaScript.
