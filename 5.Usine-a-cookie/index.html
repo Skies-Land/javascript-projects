@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <title>Usine à cookie en JS</title>
+    </head>
+    <body>
+
+        <main class="cookies-app">
+            <header>
+                <h1 class="cookies-app__main-title">
+                    Four à <span class="cookies-app__main-title--style">cookies</span> 🍪
+                </h1>
+            </header>
+
+            <div class="cookie-app__container">
+                <form class="cookies-app__form">
+                    <div class="cookies-app__input-group">
+                        <label for="name" class="cookies-app__label">Nom</label>
+                        <input 
+                            type="text"
+                            class="cookies-app__input"
+                            id="name"
+                            name="name"
+                            autocomplete="off"
+                            required
+                        > 
+                    </div>
+                    <div class="cookies-app__input-group">
+                        <label for="value" class="cookies-app__label">Valeur</label>
+                        <input 
+                            type="text"
+                            class="cookies-app__input"
+                            id="value"
+                            name="value"
+                            autocomplete="off"
+                            required
+                        > 
+                    </div>
+                    <button class="cookies-app__submit-btn cookies-app__submit-btn--create-cookie">
+                        Créer un cookie
+                    </button>
+                </form>
+                <p class="cookies-app__info-txt">Cookie déjà créé</p>
+                <ul class="cookies-app__list">
+                    <li class="cookies-app__cookie">
+                        <p class="cookies-app__cookie-name">
+                            Nom : <span class="cookies-app__cookie-name--style">Test</span>
+                        </p>
+                        <p>Valeur : 123</p>
+                        <button class="cookies-app__cookie-button">X</button>
+                    </li>
+
+                </ul>
+            </div>
+        </main>
+        <div class="toasts"></div>
+        <script src="./script.js"></script>
+    </body>
+</html>
