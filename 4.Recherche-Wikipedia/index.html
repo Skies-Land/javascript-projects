@@ -9,6 +9,7 @@
     </head>
     <body>
         <main class="wiki-app">
+            <!-- HEADER -->
             <header>
                 <img src="assets/wiki-logo.png" alt="Logo Wikipedia" class="wiki-app__logo">
                 <h1 class="wiki-app__main-title">
@@ -18,7 +19,11 @@
                     </span>
                 </h1>
             </header>
+
+            <!-- SECTION RECHERCHE -->
             <div class="wiki-aap__search">
+
+                <!-- FORM -->
                 <form class="wiki-app__form">
                     <input 
                         type="text" 
@@ -28,12 +33,17 @@
                     >
                     <button class="wiki-app__submit-btn">Recherche</button>
                 </form>
+
+                <!-- MESSAGE D'ERREUR -->
                 <p class="wiki-app__error-msg"></p>
+                <!-- RESULTAT DE RECHERCHE -->
                 <div class="wiki-app__results"></div>
+
+                <!-- LOADER -->
                 <div class="wiki-app__loader">
-                    <span class="wiki-app__loader-dot"></span>
                     <span class="wiki-app__loader-dot wiki-app__loader-dot--delay-1"></span>
                     <span class="wiki-app__loader-dot wiki-app__loader-dot--delay-2"></span>
+                    <span class="wiki-app__loader-dot wiki-app__loader-dot--delay-3"></span>
                 </div>
             </div>
         </main>
