@@ -4,6 +4,8 @@
 **générateur de dégradés** permettant de créer dynamiquement **des fonds dégradés personnalisables**.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)** 
 
+<img width="483" height="447" alt="Image" src="https://github.com/user-attachments/assets/5e838408-18d1-45c8-a9e6-904229c02cf3" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Gestion de l'implémentation de base des couleurs, **JavaScript applique un dégradé de base au fond du site** lorsqu'il est charger pour la première fois.
 2. **Manipulation** des inputs et application d'un **changement de couleur de fond du site** en fonction de la valeur des inputs.

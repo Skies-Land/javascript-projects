@@ -74,3 +74,35 @@ body {
 .gradient-app__copy-button {
     position: relative;
 }
+.gradient-app__copy-button::after {
+    content: 'Valeur copié ✅';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    padding: 12px;
+    font-style: 18px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    left: 50%;
+    transform: translate(-50%, 35px);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform;
+}
+.js-active-copy-btn::after {
+    animation: fade-out 1s ease-out;
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 30px);
+    }
+}
