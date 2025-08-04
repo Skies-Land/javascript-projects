@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>App création de dégradés linéaires</title>
+    </head>
+    <body>
+        <main class="gradient-app">
+            <div class="gradient-app__container">
+
+                <!-- COULEUR 1 et 2 -->
+                <div class="gradient-app__input-group">
+                    <label for="gradient-color-1" class="gradient-app__color-label">#FF5F6D</label>
+                    <input 
+                        type="color" 
+                        id="gradient-color1" 
+                        class="gradient-app__color-input"
+                    />
+                </div>
+                <div class="gradient-app__input-group">
+                    <label for="gradient-color-2" class="gradient-app__color-label">#FFC371</label>
+                    <input 
+                        type="color" 
+                        id="gradient-color2" 
+                        class="gradient-app__color-input"
+                    />
+                </div>
+
+                <!-- OPTION D'ORIENTATION DU DÉGRADÉ -->
+                <div class="gradient-app__range-group">
+                    <label for="orientation" class="gradient-app__range-label">
+                        <span>Orientation :</span>
+                        <span class="gradient-app__orientation-value">90°</span>
+                    </label>
+                    <input 
+                        type="range"
+                        class="gradient-app__range"
+                        id="orientation"
+                        min="0"
+                        max="360"
+                        value="90"
+                    />
+                </div>
+
+                <!-- BOUTONS -->
+                <div class="gradient-app__buttons">
+                    <button class="gradient-app__button">Copier</button>
+                    <button class="gradient-app__button" aria-label="Générer un dégrader linéaire au hasard">🎲</button>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>

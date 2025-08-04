@@ -1,0 +1,76 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gradient-app {
+    min-height: 100vh;
+    background-color: #333;
+    padding: 200px 20px 60px;
+}
+.gradient-app__container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.gradient-app__input-group {
+    border-radius: 15px;
+    outline: 2px solid #f1f1f1;
+    margin: 15px 0;
+    font-weight: bold;
+    position: relative;
+}
+.gradient-app__color-label {
+    display: block;
+    font-size: 22px;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.gradient-app__color-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.gradient-app__range-group {
+    margin: 30px 0;
+}
+.gradient-app__range-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    max-width: 180px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.gradient-app__range {
+    width: 100%;
+}
+.gradient-app__buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+.gradient-app__button {
+    font-style: 20px;
+    min-width: 150px;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+.gradient-app__copy-button {
+    position: relative;
+}
