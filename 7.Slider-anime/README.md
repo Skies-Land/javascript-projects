@@ -4,6 +4,8 @@
 Création d'un **slider** permettant d'afficher **plusieurs images différentes**, avec à l'aide de **boutons de direction**.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)** 
 
+<img width="731" height="747" alt="Image" src="https://github.com/user-attachments/assets/9e685541-86b8-4989-99c9-b58baca6db49" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. **Gestion du clic sur les boutons** de navigation et affichage des images **sans animation**.
 2. Implémentation d'animation :
