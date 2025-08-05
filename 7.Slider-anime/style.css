@@ -1,0 +1,99 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+.slider-page {
+    min-height: 100vh;
+    padding: 100px 10px 10px;
+    background-image: linear-gradient(90deg,rgba(155, 42, 134, 1) 0%, rgba(102, 84, 98, 1) 50%, rgba(237, 106, 83, 1) 100%);
+}
+.slider {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* background-color: #111; */
+    background-color: rgba(0, 128, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    display: grid;
+}
+.slider__direction-btn {
+    position: absolute;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.slider__direction-btn:hover {
+    background-color: #181818;
+}
+.slider__direction-btn-img {
+    width: 50%;
+    pointer-events: none;
+}
+.slider__direction-btn--right {
+    right: 10%;
+}
+.slider__direction-btn--left {
+    left: 10%;
+}
+.slider__slide {
+    grid-area: 1 / 1 / 2 / 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #111;
+}
+.js-active-slide {
+    display: flex;
+}
+.slider__slide-content {
+    margin-bottom: 50px;
+    color: #dfdfdf;
+    text-align: center;
+}
+.slider__slide-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+}
+.slider__slide-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.slider__slide-subtitle {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 40px
+}
+.slider__slide-btn {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid #d1d1d1;
+    color: #d1d1d1;
+    cursor: pointer;
+    min-width: 200px;
+}
+img {
+    width: 200px;
+}
