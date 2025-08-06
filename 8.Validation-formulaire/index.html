@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Validation de formulaire</title>
+    </head>
+    <body>
+
+        <main class="sign-up-page">
+            <div class="sign-up">
+                <h1 class="sign-up__title">Inscrivez-vous</h1>
+                <!-- FORM -->
+                <form class="sign-up__form">
+                    <!-- USERNAME -->
+                    <div data-inputGroupName="username" class="sign-up__input-group">
+                        <label for="username" class="sign-up__label">Nom d'utilisateur</label>
+                        <div class="sign-up__icon-input-container">
+                            <input 
+                                type="text" 
+                                class="sign-up__input js-unsername-input"
+                                id="username"
+                                placeholder="3 caractères minimum"
+                                maxlength="24"
+                                name="username"
+                            >
+                            <img src="./assets/svg/check.svg" alt="" class="sign-up__check-icon">
+                        </div>
+                        <p class="sign-up__error-msg">Choisisser un pseudo contenant au moins 3 caractères</p>
+                    </div>
+                    <!-- MAIL -->
+                    <div data-inputGroupName="email" class="sign-up__input-group">
+                        <label for="email" class="sign-up__label">Entrez votre email</label>
+                        <div class="sign-up__icon-input-container">
+                            <input 
+                                type="email" 
+                                class="sign-up__input js-email-input"
+                                id="email"
+                                placeholder="mon-email@exemple.com"
+                                maxlength="24"
+                                name="email"
+                            >
+                            <img src="./assets/svg/check.svg" alt="" class="sign-up__check-icon">
+                        </div>
+                        <p class="sign-up__error-msg">Veuillez entrer une adresse email valide</p>
+                    </div>
+                    <!-- PASSWORD -->
+                    <div data-inputGroupName="password" class="sign-up__input-group">
+                        <label for="password" class="sign-up__label">Mot de passe</label>
+                        <p class="sign-up__password-info">
+                            Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.
+                        </p>
+                        <div class="sign-up__icon-input-container">
+                            <input 
+                                type="password" 
+                                class="sign-up__input js-password-input"
+                                id="password"
+                                placeholder="Votre mot de passe"
+                                maxlength="24"
+                                name="password"
+                            >
+                            <img src="./assets/svg/check.svg" alt="" class="sign-up__check-icon">
+                        </div>
+                        <p class="sign-up__error-msg">Veuillez entrer une adresse email valide</p>
+                    </div>
+                    <!-- REPEAT PASSWORD -->
+                    <div data-inputGroupName="repaetPassword" class="sign-up__input-group">
+                        <label for="repaetPassword" class="sign-up__label">Confimez votre mot de passe</label>
+                        <div class="sign-up__icon-input-container">
+                            <input 
+                                type="password" 
+                                class="sign-up__input js-password-confirmation"
+                                id="repaetPassword"
+                                placeholder="Confirmer votre mot de passe"
+                                maxlength="24"
+                                name="repaetPassword"
+                            >
+                            <img src="./assets/svg/check.svg" alt="" class="sign-up__check-icon">
+                        </div>
+                        <p class="sign-up__error-msg">Les mots de passe ne sont pas identiques.</p>
+                    </div>
+                    <!-- SUBMIT -->
+                    <button class="sign-up__submit-button">Création du compte</button>
+                </form>
+            </div>
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
