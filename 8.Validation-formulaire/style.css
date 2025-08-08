@@ -8,23 +8,47 @@ body {
 }
 .sign-up-page {
     min-height: 100vh;
-    background-color: #d9a7c7;
-    opacity: 0.8;
-    background-image: 
-    repeating-radial-gradient( circle at 0 0, transparent 0, #d9a7c7 29px ), 
-    repeating-linear-gradient( #fffcdc55, #fffcdc );
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    /* https://cssgradient.io/gradient-backgrounds/ */
+    background:
+    linear-gradient(45deg, 
+        rgba(165, 200, 228, 1.000) 0.000%, 
+        rgba(228, 173, 71, 1.000) 8.333%, 
+        rgba(229, 144, 220, 1.000) 16.667%, 
+        rgba(166, 116, 81, 1.000) 25.000%, 
+        rgba(101, 92, 208, 1.000) 33.333%, 
+        rgba(96, 75, 94, 1.000) 41.667%, 
+        rgba(156, 68, 194, 1.000) 50.000%, 
+        rgba(223, 70, 109, 1.000) 58.333%, 
+        rgba(232, 82, 178, 1.000) 66.667%, 
+        rgba(175, 102, 126, 1.000) 75.000%, 
+        rgba(106, 128, 161, 1.000) 83.333%, 
+        rgba(93, 157, 144, 1.000) 91.667%, 
+        rgba(147, 185, 143, 1.000) 100.000%);
     padding: 80px 20px 50px;
 }
 .sign-up {
     max-width: 600px;
     margin: 0 auto;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.175);
+    background-color: rgba(0, 0, 0, 0.41);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(110, 110, 110, 0.325);
+    border: 1px solid rgba(179, 179, 179, 0.55);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.496);
     color: #f1f1f1;
     border-radius: 50px;
+}
+.js-shake-animation {
+    animation: shake 0.4s;
+}
+@keyframes shake {
+    33% {
+        transform: translateX(-5px);
+    }
+    66% {
+        transform: translateX(5px);
+    }
 }
 .sign-up__title {
     font-size: 30px;
@@ -59,6 +83,7 @@ input:-webkit-autofill {
 }
 .sign-up__input::placeholder {
     font-size: 16px;
+    color: rgb(142, 140, 140);
 }
 .sign-up__icon-input-container {
     position: relative;
@@ -73,8 +98,9 @@ input:-webkit-autofill {
 }
 .sign-up__error-msg {
     margin-top: 9px;
-    color: #f75252;
+    color: #fb2e2e;
     font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     display: none;
 }
 .sign-up__password-info {

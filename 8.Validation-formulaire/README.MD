@@ -4,6 +4,8 @@
 Système de **validation des données** côté **Front** pour permettre de guider les utilisateurs et augmenter **drastiquement** le taux de remplissage et d'envoi des **formulaires**.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="882" height="734" alt="Image" src="https://github.com/user-attachments/assets/915f37a3-9577-41fc-a86e-d23318330593" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Système pour que le formulaire **ne puis pas être envoyé** si les inputs n'ont pas passé toutes les validations.
 2. Le premier input gère le **nom d'utilisateur** qui doit contenir au **moins trois lettres**, sans espaces à gauche et à droite.<br>
