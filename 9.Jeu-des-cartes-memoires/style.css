@@ -81,6 +81,7 @@ body {
 }
 .memory-game__back {
     backface-visibility: hidden;
+    transform: rotateY(0deg);
 }
 .memory-game__face {
     transform: rotateY(180deg);
