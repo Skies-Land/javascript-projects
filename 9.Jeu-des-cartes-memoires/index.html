@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Jeu des cartes mémoire</title>
+    </head>
+    <body>
+
+        <main class="memory-game">
+            <header class="memory-game__header">
+                <h1 class="memory-game__title">Jeu des cartes mémoire</h1>
+                <p class="memory-game__advice">Appuyer sur barre d'espace pour reset le jeu.</p>
+                <p class="memory-game__score">Nombre d'essais : 0</p>
+            </header>
+
+            <ul class="memory-game__grid">
+                <li class="memory-game__card">
+                    <div class="memory-game__double-face">
+                        <!-- FRONT VIEW MAP-->
+                        <div class="memory-game__face">
+                            <img src="assets/svg/cherry.svg" alt="" class="memory-game__card-img">
+                        </div>
+                        <!-- BACK VIEW MAP-->
+                        <div class="memory-game__back">
+                            <img src="assets/svg/question.svg" alt="" class="memory-game__card-img">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
