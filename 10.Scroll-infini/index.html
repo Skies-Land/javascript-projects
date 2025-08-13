@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Scroll infini</title>
+    </head>
+    <body>
+
+        <main class="search-imgs">
+
+            <div class="search-imgs__container">
+                <header class="search-imgs__header">
+                    <h1 class="search-imgs__title">
+                        <span class="search-imgs__title--style">Recherche d'images sur </span>Unsplash
+                    </h1>
+                </header>
+
+                <form class="search-imgs__form">
+                    <label for="search" class="search-imgs__label">
+                        Votre recherche
+                    </label>
+                    <input 
+                        id="search" 
+                        type="text" 
+                        class="search-imgs__input"
+                    >
+                </form>
+
+                <!-- IMG LIST -->
+                <ul class="search-imgs__list">
+                    <li class=".search-imgs__list-item">
+                        <img src="./assets/images/image-test.jpg" alt="" class="search-imgs__list-item-img">
+                    </li>
+                </ul>
+
+                <p class="search-imgs__error-msg"></p>
+                <div class="search-imgs__marker"></div>
+            </div>
+            
+        </main>
+
+        <!-- LOADER ANIMATION -->
+        <div class="loader">
+            <p class="loader__text">Loading ...</p>
+            <div class="loader__loading-animation"></div>
+        </div>
+
+        <!-- SCROLL UP -->
+        <button class="scroll-to-top-button">
+            <img src="./assets/images/arrow.png" alt="Retour en haut de page" class="scroll-to-top-button__logo">
+        </button>
+
+        <script src="script.js"></script>
+    </body>
+</html>

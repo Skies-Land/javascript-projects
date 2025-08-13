@@ -1,0 +1,118 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Open sans, Helvetica, sans-serif;
+}
+.search-imgs {
+    padding: 50px 20px 10px;
+}
+.search-imgs__container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.search-imgs__title {
+    font-family: Raleway, sans-serif;
+    font-size: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+.search-imgs__title--style {
+    font-weight: 400;
+}
+.search-imgs__label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+.search-imgs__input {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.3);
+}
+.search-imgs__list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-auto-rows: 250px; */
+    list-style-type: none;
+}
+.search-imgs__list-item {
+    aspect-ratio:  1 / 1;
+}
+.search-imgs__list-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.search-imgs__error-msg {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.search-imgs__marker {
+    height: 10px;
+}
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 24px 24px 42px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3),;
+    border: 1px solid 111;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    text-align: center;
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: opacity 0.4s ease-out, visibility 0.4s;
+}
+.js-active-loader {
+    opacity: 1;
+    visibility: visible;
+}
+.loader__text {
+    margin-bottom: 24px;
+}
+.loader__loading-animation {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    border: 5px solid #333;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    100% {
+        rotate: 360deg;
+    }
+}
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-to-top-button__logo {
+    width: 50%;
+}
