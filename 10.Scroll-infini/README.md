@@ -5,6 +5,8 @@
 Utilisation de l'API de la banque d'images **Unsplash** afin d'intégrer un scroll infini à la manière de **Pinterest** et un système de recherche.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="1090" height="761" alt="Image" src="https://github.com/user-attachments/assets/0398abaa-108b-4642-8fac-92b0215b22fd" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Récupération d'un clé API sur [Unsplash developer](https://unsplash.com/developers).
 2. Analyse de l'API et appel de **la bonne route** avec les bons **paramètres de recherche** afin de recevoir des données.
