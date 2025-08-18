@@ -22,6 +22,12 @@ let endTimeMS = null
 function startPomodoro() {
     isRunning = true
     updatePlayPauseUI(true)
+
+    const timeLeftMs = isWorking ? workTimeMs : restTimeMs
+
+    endTimeMS = Date.now() + timeLeftMs
+
+    timerID = setInterval(handleTicks, 10)
 }
 
 function updatePlayPauseUI(isPlaying) {
@@ -45,4 +51,36 @@ function handleUnderlineAnimation(itemState) {
             element.classList.remove('js-active-pomodoro')
         }
     }
+}
+
+function handleTicks() {
+    const remainingMs = Math.max(0, endTimeMS - Date.now())
+    if (remainingMs === 0) {
+        switchPeriod()
+        return
+    }
+
+    const currentRemainingSeconds = Math.floor(remainingMs / 1000)
+    if (currentRemainingSeconds !== lastDisplayedSec) {
+        lastDisplayedSec = currentRemainingSeconds
+        updatePomodoro(currentRemainingSeconds)
+    }
+}
+
+const displayWork = document.querySelector('.pomodoro__worktime')
+const displayPause = document.querySelector('.pomodoro__restime')
+
+function updatePomodoro(secondsLeft) {
+    const display = isWorking ? displayWork : displayPause
+    display.textContent = formatTime(secondsLeft)
+}
+
+function formatTime(seconds) {
+    /** EXPLICATION : `Math.floor`
+     * Retourne une chaîne au format "minutes:secondes".
+     * Math.floor(seconds / 60) → calcule le nombre de minutes entières.
+     * - seconds % 60 → calcule le reste en secondes.
+     * - Le ternaire ajoute un "0" devant si les secondes sont < 10, afin d’avoir un affichage cohérent (ex: "5:07").
+     */
+    return `${Math.floor(seconds / 60)}:${seconds % 60 < 10 ? `0${seconds % 60}` : seconds % 60}`
 }
