@@ -29,4 +29,20 @@ function updatePlayPauseUI(isPlaying) {
     togglePlayBtn.setAttribute('data-toggle', isPlaying ? 'pause' : 'play')
     togglePlayBtn.setAttribute('aria-label', isPlaying ? 'Pause du Pomodoro' : 'Démarrer le Pomodoro')
     togglePlayBtn.setAttribute('aria-pressed', isPlaying ? 'true' : 'false')
+
+    handleUnderlineAnimation(isPlaying ? 
+        {work: isWorking, rest: !isWorking} :
+        {work: false, rest: false}
+    )
+}
+
+function handleUnderlineAnimation(itemState) {
+    for (const item in itemState) {
+        const element = document.querySelector(`.js-pomodoro-${item}-text`)
+        if (itemState[item]) {
+            element.classList.add('js-active-pomodoro')
+        } else {
+            element.classList.remove('js-active-pomodoro')
+        }
+    }
 }
