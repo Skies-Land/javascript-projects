@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Application de pomodoro</title>
+    </head>
+    <body>
+
+        <main class="pomodoro">
+            <hearder class="pomodoro__header">
+                <h1 class="pomodoro__title">
+                    Le <span class="pomodoro__title--style">POMODORO</span>
+                </h1>
+            </hearder>
+
+            <div class="pomodoro__info">
+                <div class="pomodoro__info-block">
+                    <p class="pomodoro__description js-pomodoro-work-text">Travail</p>
+                    <p class="pomodoro__worktime">30:00</p>
+                </div>
+                <div class="pomodoro__info-block">
+                    <p class="pomodoro__description js-pomodoro-rest-text">Repos</p>
+                    <p class="pomodoro__restime">5:00</p>
+                </div>
+            </div>
+
+            <div class="pomodoro__festures">
+                <button 
+                    class="pomodoro__button js-pomodoro-toggle-btn" 
+                    aria-label="Démarrer le Pomodoro"
+                    aria-pressed="false"
+                    data-toggle="play"
+                >
+                    <img src="./assets/svg/play.svg" alt="" class="pomodoro__button-img">
+                </button>
+                <button 
+                    class="pomodoro__button js-rest-btn"
+                    aria-label="Réinitialiser le Pomodoro"
+                >
+                    <img src="./assets/svg/reset.svg" alt="" class="pomodoro__button-img">
+                </button>
+            </div>
+
+            <p class="pomodoro__cycles">Cycle(s) : 0</p>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
