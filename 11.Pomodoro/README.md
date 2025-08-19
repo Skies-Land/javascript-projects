@@ -5,6 +5,8 @@ Application de système **Pomodoro** qui est une technique de **gestion de temps
 Dans ce projet, le temps de travail est fixer à **30 minutes**, et le temps de repos à **5 minutes**.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="702" height="757" alt="Image" src="https://github.com/user-attachments/assets/bb33b1dc-ddfc-4cc1-b376-424314d9359f" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Implémentation de la fonctionnalité permettant de gérer le lancement et la mise en pause du pomodoro à l'aide du bouton **play/pause**.
 2. **Décrémentation** du temps de **travail** en premier.

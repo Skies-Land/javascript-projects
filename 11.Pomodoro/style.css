@@ -71,7 +71,7 @@ body {
     }
 }
 .pomodoro__worktime,
-.pomodoro__restime {
+.pomodoro__resttime {
     font-family: Inconsolata, sans-serif;
 }
 .pomodoro__festures {
