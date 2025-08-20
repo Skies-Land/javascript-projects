@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    font-family: Open sans, sans-serif;
+    font-family: Open sans, Helvetica, sans-serif;
 }
 .pwd-generator-page {
     min-height: 100vh;
@@ -26,7 +26,7 @@ body {
     align-items: flex-end;
     margin-bottom: 30px;
 }
-.pwd-generator__generated-psw {
+.pwd-generator__generated-pwd {
     font-size: 20px;
     margin-right: 15px;
     letter-spacing: 1px;
@@ -51,7 +51,6 @@ body {
 .pwd-generator__copy-icon {
     width: 50%;
 }
-/* Toast animation */
 .pwd-generator__range-group {
     margin-bottom: 30px;
 }

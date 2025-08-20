@@ -17,8 +17,8 @@
                 <p class="pwd-generator__description">Générateur de mot de passe</p>
                 <!-- COPIE DU MDP -->
                 <div class="pwd-generator__result">
-                    <p class="pwd-generator__generated-psw"></p>
-                    <button class="pwd-generator__copy-btn">
+                    <p class="pwd-generator__generated-pwd"></p>
+                    <button class="pwd-generator__copy-btn" aria-label="Copier le mot de passe" disabled>
                         <img 
                             src="./assets/svg/copy.svg" 
                             alt="Copier le mot de passe" 
@@ -28,7 +28,7 @@
                 </div>
                 <!-- TAILLE DU MDP -->
                 <div class="pwd-generator__range-group">
-                    <label for="range" class="pwd-generator__range-label">Taille du mot de passe : 10</label>
+                    <label for="range" class="pwd-generator__range-label">Taille du mot de passe : <span class="pwd-generator__range-value">10</span></label>
                     <input 
                         type="range" 
                         id="range"
@@ -36,6 +36,10 @@
                         min="4"
                         max="20"
                         value="10"
+                        data-min="4"
+                        data-max="20"
+                        data-default="10"
+                        step="1"
                     >
                 </div>
                 <!-- OPTIONS DU MDP -->
@@ -80,7 +84,7 @@
                 </div>
 
                 <button class="pwd-generator__generate-pwd-btn">Générer</button>
-                <p class="pwd-generator--error-msg"></p>
+                <p class="pwd-generator__error-msg" aria-live="polite"></p>
             </div>
         </main>
 

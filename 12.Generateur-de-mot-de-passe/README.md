@@ -6,6 +6,8 @@ Le but est de choisir sa **force** à l'aide de checkboxes (caractères spéciau
 <br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="771" height="734" alt="Image" src="https://github.com/user-attachments/assets/c4c2dc2b-fbed-4774-aaea-f0a0fd7775c3" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Création d'un tableaux contenant les caractères correspondant aux différentes checkboxes cochées.
 2. Retourne des nombres de manière **aléatoire**, avec la méthode **window.crypto.getRandomValues()**.
