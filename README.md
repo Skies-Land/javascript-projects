@@ -58,6 +58,7 @@ Projets *🚧 en cours de réalisation* 🚧 en suivant l'un des cours de [**Enz
 Chaque projet est organisé dans un dossier séparé :
 ```
 📁 /01.NomDuProjet
+├── assets/ ----------- dossier de ressource d'images, icônes (png, svg)
 ├── README.md --------- description du projet | fonctionnalités clés | notions JS mobilisées
 ├──index.html
 ├──style.css
