@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <title>Recherche d'utilisateurs</title>
+    </head>
+    <body>
+
+        <!-- SIDE BAR -->
+        <aside class="side-nav">
+            <nav>
+                <a href="#" class="side-nav__logo-link">
+                    <img src="./assets/svg/logo.svg" alt="Logo">
+                    <span class="side-nav__logo-text">Users</span>
+                </a>
+                <a href="#" class="side-nav__link">
+                    <img src="./assets/svg/dashboard.svg" alt="" class="side-nav__link-img">
+                    <span class="side-nav__link-text">Dashboard</span>
+                </a>
+                <a href="#" class="side-nav__link">
+                    <img src="./assets/svg/speech-bubble.svg" alt="" class="side-nav__link-img">
+                    <span class="side-nav__link-text">Messenger</span>
+                </a>
+                <a href="#" class="side-nav__link js-active-sidenav-link">
+                    <img src="./assets/svg/server.svg" alt="" class="side-nav__link-img">
+                    <span class="side-nav__link-text">Database</span>
+                </a>
+                <a href="#" class="side-nav__link">
+                    <img src="./assets/svg/calendar.svg" alt="" class="side-nav__link-img">
+                    <span class="side-nav__link-text">Calendar</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="user-list">
+            <!-- SEARCH BAR -->
+            <div class="user-list__input-control">
+                <label for="search" class="user-list__label">
+                    <img src="./assets/svg/search.svg" alt="" class="user-list__label-logo">
+                </label>
+                <input 
+                    type="text" 
+                    class="user-list__input"
+                    id="search"
+                    placeholder="Rechercher par nom, prénom ou les deux"
+                    aria-label="Rechercher par nom, prénom ou les deux"
+                >
+            </div>
+
+            <p class="user-list__text-description">Résultats</p>
+
+            <div class="table-wrapper">
+                <!-- TABLE -->
+                <table class="table">
+                    <!-- COLUMN NAMES -->
+                    <tr>
+                        <th class="table__heading">Nom</th>
+                        <th class="table__heading">Email</th>
+                        <th class="table__heading">Téléphone</th>
+                    </tr>
+                    <!-- DATA CONTENT -->
+                    <tbody class="table__results">
+                        <tr class="table__content-row">
+                            <!-- HEADING NAME -->
+                            <td class="table__data table__data-info">
+                                <div class="table__data-content-wrapper">
+                                    <img src="./assets/svg/server.svg" alt="" class="table__data-img">
+                                    <span>Aubert Lorenzo.</span>
+                                </div>
+                            </td>
+                            <!-- HEADING MAIL -->
+                            <td class="table__data table__data-email">
+                                <span>lorenzo.aubert@exemple.com.</span>
+                            </td>
+                            <!-- HEADING PHONE -->
+                            <td class="table__data table__data-phone">
+                                <span>01-23-45-67-89.</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="user-list__server-info"></p>
+            <!-- <div class="user-list__loader">
+                <img src="./assets/svg/loader.svg" alt="">
+            </div> -->
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
