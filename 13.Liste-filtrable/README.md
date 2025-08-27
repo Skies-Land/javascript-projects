@@ -4,9 +4,11 @@
 **Récupérer et afficher une liste d’utilisateurs**, puis création d’une fonctionnalité de **filtre dynamique**.br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="1435" height="736" alt="Image" src="https://github.com/user-attachments/assets/3156bcc1-3cd2-4224-928a-d2086387ff0f" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. **Appel à une API** afin de **récupérer** les données et de créer la liste.<br>
-  Url de l'API : **https://randomuser.me/api/?nat=fr&results=50** <br>
+  Url de l'API utilisé : **https://randomuser.me/api/?nat=fr&results=50** <br>
   Cette route permet de récupérer 50 utilisateurs.
 2. **Création de la liste à afficher** à l'aide des résultats triés.
 3. Implémentation d'un **loader** et d'un potentiel **message d'erreur**.

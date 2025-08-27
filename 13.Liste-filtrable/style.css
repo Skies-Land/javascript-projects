@@ -124,7 +124,7 @@ body {
     border-radius: 50%;
     margin-right: 10px;
 }
-.table__data-row:nth(odd) {
+.table__data-row:nth-child(odd) {
     background-color: #f1f9f6;
 }
 .user-list__loader {
