@@ -1,7 +1,7 @@
 # 👨 LISTE D'UTILISATEURS
 
 ## 📖 Description
-**Récupérer et afficher une liste d’utilisateurs**, puis création d’une fonctionnalité de **filtre dynamique**.br>
+**Récupérer et afficher une liste d’utilisateurs**, puis création d’une fonctionnalité de **filtre dynamique**.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
 <img width="1435" height="736" alt="Image" src="https://github.com/user-attachments/assets/3156bcc1-3cd2-4224-928a-d2086387ff0f" />
