@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./assets/apple-touch-icon.png">
+        <title>Video Player</title>
+    </head>
+    <body>
+
+        <main class="video-page">
+            <header>
+                <h1 class="video-page__title">Lecteur
+                    <span class="video-page__title--style">personnalisé</span>
+                </h1>
+            </header>
+
+            <div class="video">
+                <video class="video__player">
+                    <source src="./assets/ressources/video.mp4" type="video/mp4"></source>
+                </video>
+                <!-- CONTROLS -->
+                <div class="video__controls">
+                    <!-- PROGRESS BAR -->
+                    <div class="video__progress">
+                        <div class="video__progress-bar"></div>
+                    </div>
+                    <div class="video__controls-container">
+                        <!-- BOUTONS PLAY & SOURDINE -->
+                        <button class="video__controller video__controller--mr js-playback-toggle" aria-label="Lecture de la vidéo" aria-pressed="false">
+                            <img src="./assets/svg/play.svg" alt="" class="video__controller-logo">
+                        </button>
+                        <button class="video__controller video__controller--mr js-mute-btn" aria-label="Sourdine de la vidéo" aria-pressed="false">
+                            <img src="./assets/svg/unmute.svg" alt="" class="video__controller-logo">
+                        </button>
+                        <!-- BARRE DE VOLUME -->
+                        <input 
+                            type="range" 
+                            class="video__volume-range"
+                            min="0"
+                            max="100"
+                            value="50"
+                            step="1"
+                        >
+                        <!-- TIMER -->
+                        <div class="video__timer">
+                            <span class="video__time js-current-video-time">00:00</span>
+                            /
+                            <span class="video__time js-total-video-time">00:00</span>
+                        </div>
+                        <!-- BOUTON FULLSCREEN -->
+                        <button class="video__controller video__controller--fullscreen-ml js-fullscreen-toggler" aria-label="Agrandir la vidéo" aria-pressed="false">
+                            <img src="./assets/svg/fullscreen.svg" alt="" class="video__controller-logo">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
