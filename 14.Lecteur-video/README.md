@@ -4,6 +4,8 @@
 Création d'un **lecteur permettant d'afficher une vidéo**, de la mettre sur pause ou de la lancer, de modifier son volume et de permettre le déplacement en cliquant sur une barre de progression, le tout dans une interface complète et fluide.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="670" height="757" alt="Image" src="https://github.com/user-attachments/assets/e620d46d-1daa-4d5a-bf16-3b7209e6ed19" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Mise en place d'une **vidéo en HTML/CSS**, sans afficher les contrôles par défaut, mais en préparation les éléments : `bouton - play/pause`, `bouton - mute/unmute`, `barre de progression`, `input range gérant le volume`, `bouton - plein écran`.
 2. **Affichage de la durée de la vidéo**, après son chargement.
