@@ -4,6 +4,8 @@
 Le fameux **jeu du morpion** consistant à **aligner 3 croix(❌) ou ronds(⭕)** afin de gagner la partie, à vous de jouer !<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="541" height="758" alt="Image" src="https://github.com/user-attachments/assets/21e65602-da0a-4d70-acda-a05e2e4a8126" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. **Assigniation d'une ❌ ou d'un ⭕** lorsque l'utilisateur clique sur une cellule du Morpion.
 2. Changement du texte pour informer le joueur du **tour en cours**. *(Au tour de ❌ ou⭕)*
