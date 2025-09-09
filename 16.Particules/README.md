@@ -4,6 +4,8 @@
 Création d'une **animation de particules en JavaScript**.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="833" height="745" alt="Image" src="https://github.com/user-attachments/assets/ba2b96ec-b7cf-46a9-aba5-3b7a1e4ea855" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. **Création d'une classe** qui va gérer les particules. Elle contiendra la **taille, la position, la direction et la couleur** de chacune d'entre elles.
 2. Création d'une fonction qui permet **d'initialiser le nombre de particules** dans un tableau en leur donnant à chacune des valeurs aléatoire de taille, position et direction.
