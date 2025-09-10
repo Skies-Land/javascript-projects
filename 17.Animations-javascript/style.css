@@ -1,0 +1,122 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+    background: #111;
+}
+.custom-cursor {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.custom-cursor__outer-circle, 
+.custom-cursor__inner-dot  {
+    position: absolute;
+    translate: -50% -50%;
+    transition: scale 0.4s ease-out, opacity 0.4s ease-out;
+}
+.custom-cursor__outer-circle {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 1px #4f4f4f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-cursor__inner-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+}
+@media (pointer: coarse) {
+    .custom-cursor {
+        display: none;
+    }
+}
+.showcase-header {
+    height: 700px;
+    padding: 0 10px;
+    border-bottom: 1px solid #f1f1f124;
+    text-align: center;
+    position: relative;
+    background-image: url(./assets/img/hero-background.jpg);
+    background-position: center;
+}
+@media (width <= 700px) {
+    .showcase-header {
+        height: 500px;
+    }
+}
+.showcase-header__nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: transparent;
+    margin-bottom: 100px;
+}
+.showcase-header__nav-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    opacity: 0;
+    animation: fade-in 0.3s 0.5s ease-out forwards;
+}
+.showcase-header__nav-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #6f6f6fd0;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(33%);
+    transition: transform 0.2s ease-out;
+}
+.showcase-header__nav-link:hover::before {
+    transform: scaleX(100%);
+    background-color: #f1f1f1;
+}
+.showcase-header__title {
+    font-size: 72px;
+    display: inline-block;
+    font-weight: 800;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #999, #fff);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+@media (width <= 700px) {
+    .showcase-header__title {
+        font-size: 42px
+    }
+    .showcase-header__nav-link {
+        font-size: 16px;
+    }
+}
+.showcase-header__subtitle {
+    font-family: raleway;
+    color: #f1f1f1;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fade-in 0.3s 0.6s ease-out forwards
+}
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    } 
+}
