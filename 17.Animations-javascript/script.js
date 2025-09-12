@@ -114,3 +114,34 @@ typeWriter({
     text: "Puissance, liberté.",
     delay: 100
 })
+
+const slideInCars = document.querySelectorAll(".showcase-models__car-example")
+
+const intersectionObserver = new IntersectionObserver(handleIntersect, {rootMargin: "-10%"})
+
+slideInCars.forEach(car => {intersectionObserver.observe(car)})
+
+/** EXPLICATION :
+ *
+ * Callback de l'IntersectionObserver déclenchée quand un ou plusieurs éléments observés
+ * entrent dans la zone de visibilité définie (root + rootMargin).
+ *
+ * Lorsqu'un élément `.showcase-models__car-example` devient visible à l'écran,
+ * la fonction lui ajoute une classe CSS (`js-active-car-li`) pour déclencher une animation
+ * (ex. effet d'apparition) puis arrête l'observation de cet élément.
+ *
+ * @param {IntersectionObserverEntry[]} entries - Liste des éléments observés avec leurs états de visibilité.
+ * @returns {void}
+ *
+ * @example
+ * const observer = new IntersectionObserver(handleIntersect, { rootMargin: "-10%" });
+ * observer.observe(document.querySelector(".mon-élément"));
+ */
+function handleIntersect(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("js-active-car-li")
+            intersectionObserver.unobserve(entry.target)
+        }
+    })
+}

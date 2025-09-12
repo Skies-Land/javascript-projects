@@ -8,6 +8,8 @@ Trois animations :
 - Animations d'apparition au scroll<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="1439" height="697" alt="Image" src="https://github.com/user-attachments/assets/47ac4f98-adc5-4b77-af21-a83e13d5758a" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Création d'un **curseur personnalisé**.
 2. Codage d'un **effet typewriter** (machie à écrire) permettant d'afficher les lettres du titre une à une.
