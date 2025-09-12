@@ -73,3 +73,44 @@ function animateCursor() {
         cursorInnerDot.style.opacity = "1"
     }
 }
+
+const title = document.querySelector('.showcase-header__title')
+const subtitle = document.querySelector('.showcase-header__subtitle')
+
+/** EXPLICATIF :
+ * Anime l'affichage progressif d'un texte dans un élément HTML, de type "machine à écrire".
+ *
+ * Chaque caractère du texte est ajouté un à un dans l'élément ciblé à intervalle régulier,
+ * jusqu'à afficher la chaîne complète. L'animation s'arrête automatiquement.
+ *
+ * @param {Object} params - Paramètres de la fonction.
+ * @param {HTMLElement} params.element - Élément DOM dans lequel afficher le texte.
+ * @param {string} params.text - Texte à écrire progressivement.
+ * @param {number} [params.delay=100] - Délai en millisecondes entre chaque caractère.
+ *
+ * @returns {void}
+ *
+ * @example
+ * typeWriter({
+ *   element: document.querySelector('.title'),
+ *   text: "Bienvenue sur le site !",
+ *   delay: 80
+ * })
+ */
+function typeWriter({element, text, delay = 100}) {
+    let index = 0
+
+    const intervalId = setInterval(() => {
+        if (index < text.length) {
+            element.textContent += text[index]
+            index++
+        } else {
+            clearInterval(intervalId)
+        }
+    }, delay)
+}
+typeWriter({
+    element: title,
+    text: "Puissance, liberté.",
+    delay: 100
+})
