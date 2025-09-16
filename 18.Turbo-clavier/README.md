@@ -4,7 +4,7 @@
 **Jeu de vitesse de frappe** dans lequel l'utilisateur tentera d'écrire un **maximum de caractères en soixante secondes.**<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
-
+<img width="880" height="756" alt="Image" src="https://github.com/user-attachments/assets/e16db2d0-e9bd-400d-b009-cfb996b7bc66" />
 
 ## 🔧 Fonctionnalités JavaScript
 1. **Affichage de la première phrase** du tableau importé `phrases.js` en dessous du textarea.
