@@ -43,3 +43,53 @@ function pause() {
     playTogglerBtn.setAttribute("aria-pressed", "false")
     musicPlayer.pause()
 }
+
+const displayCurrentTime = document.querySelector(".js-current-time")
+const durationTime = document.querySelector(".js-duration-time")
+
+window.addEventListener("load", fillDurationVariables)
+
+let current
+let totalDuration
+
+function fillDurationVariables() {
+    current = musicPlayer.currentTime
+    totalDuration = musicPlayer.duration
+
+    formatValue(current, displayCurrentTime)
+    formatValue(totalDuration, durationTime)
+}
+
+function formatValue(value, element) {
+    const currentMinutes = Math.floor(value / 60)
+    let currentSeconds = Math.floor(value % 60)
+
+    if (currentSeconds < 10) {
+        currentSeconds = `0${currentSeconds}`
+    }
+    element.textContent = `${currentMinutes}:${currentSeconds}`
+}
+
+const progressBar = document.querySelector(".audio-player__progress-bar")
+
+musicPlayer.addEventListener("timeupdate", updateProgress)
+
+function updateProgress(e) {
+    const current = e.target.currentTime
+
+    formatValue(current, displayCurrentTime)
+
+    const progressValue = current / totalDuration
+    progressBar.style.transform = `scaleX(${progressValue})`
+}
+
+const progressBarContainer = document.querySelector(".audio-player__progress-container")
+
+progressBarContainer.addEventListener("click", setProgress)
+
+function setProgress(e) {
+    const progressBarDimension = progressBarContainer.getBoundingClientRect()
+    const clickPositionInProgressBar = e.clientX - progressBarDimension.left
+    const clickProgressRatio = clickPositionInProgressBar / progressBarDimension.width
+    musicPlayer.currentTime = clickProgressRatio * totalDuration
+}
