@@ -1,7 +1,10 @@
 # 🎧 LECTEUR AUDIO
 
 ## 📖 Description
-Développement d'un **lecteur audio** à la fois **fonctionnels et esthétiques** permettant d’accéder à la **durée totale** d’un morceau, de connaître sa **position de lecture actuelle**, ou encore de contrôler la **lecture** du morceau en cours.
+Développement d'un **lecteur audio** à la fois **fonctionnels et esthétiques** permettant d’accéder à la **durée totale** d’un morceau, de connaître sa **position de lecture actuelle**, ou encore de contrôler la **lecture** du morceau en cours.<br>
+Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
+
+<img width="540" height="752" alt="Image" src="https://github.com/user-attachments/assets/588684d8-745e-4a1f-b1c8-6b93dc255ae4" />
 
 ## 🔧 Fonctionnalités JavaScript
 1. **Affichage des données** de la première musique de la liste : titre, durée,...
