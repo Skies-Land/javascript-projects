@@ -55,7 +55,7 @@ Projet réalisé en suivant l'un des cours de [**Enzo Ustariz - Web School**](ht
 ## 📁 Structure du dépôt
 Chaque projet est organisé dans un dossier séparé :
 ```
-📁 /01.NomDuProjet
+📁 projects/01.NomDuProjet
 ├── assets/ ----------- dossier de ressource d'images, icônes (png, svg)
 ├── README.md --------- description du projet | fonctionnalités clés | notions JS mobilisées
 ├──index.html
