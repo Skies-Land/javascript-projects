@@ -6,6 +6,8 @@ Cette calculatrice permet de faire des **calculs de base**, comme des additions,
 Mais elle ne permet pas d'utiliser des parenthèses, le nombre Pi ou des fonctions logarithmiques.<br>
 Projet développé en suivant l'un des cours de **[Enzo Ustariz - Web School](https://www.udemy.com/user/ustariz-enzo/)**
 
+<img width="884" height="764" alt="Image" src="https://github.com/user-attachments/assets/c06c61a8-79b6-4272-b3a1-4d396b46af64" />
+
 ## 🔧 Fonctionnalités JavaScript
 1. Gestion du **pavé numerique et des symboles**, l'utilisateur peux ajouter les chiffres et symbole qu'il presse sur l'écran de calculatrice.
 2. Affichage du **résultat du calcul** quand l'utilisateur appuie sur la touche **"="**.
