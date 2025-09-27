@@ -1,7 +1,5 @@
 # 🔧 PROJETS JAVASCRIPT
 
-## 🚧 *projets en cours de développement* 🚧
-
 Ce dépôt regroupe une série de 20 mini-projets développés en JavaScript pur (vanilla JS), sans framework ni bibliothèque externe.
 
     Dans l'optique de :
@@ -10,10 +8,10 @@ Ce dépôt regroupe une série de 20 mini-projets développés en JavaScript pur
         ✔️ Manipuler efficacement le DOM
         ✔️ S'exercer à coder sans dépendance extérieure
     
-Projets *🚧 en cours de réalisation* 🚧 en suivant l'un des cours de [**Enzo Ustariz - Web School**](https://www.udemy.com/user/ustariz-enzo/)
+Projet réalisé en suivant l'un des cours de [**Enzo Ustariz - Web School**](https://www.udemy.com/user/ustariz-enzo/)
 
-## 🧠 Compétences à développées
-#### 🛠️ Techniques qui seront abordées :
+## 🧠 Compétences développées
+#### 🛠️ Techniques abordées :
 - 📌 Manipulation du DOM & événements
 - 🔁 Boucles, conditions & logique de programmation
 - 🚀 JavaScript moderne (`let`, `const`, arrow functions, classes…)
@@ -24,7 +22,7 @@ Projets *🚧 en cours de réalisation* 🚧 en suivant l'un des cours de [**Enz
 - 🧪 Bonnes pratiques, organisation & débogage
 
 ## 🛠️ Liste des projets
-| Projet                            | Description                                |
+| Projets                            | Description                                |
 | --------------------------------- | ------------------------------------------ |
 | 💰 **Prêt bancaire**              | Simulation de demande de prêt              |
 | 🌦️ **Météo**                      | Données météo en temps réel via API        |
@@ -47,7 +45,7 @@ Projets *🚧 en cours de réalisation* 🚧 en suivant l'un des cours de [**Enz
 | 🎧 **Lecteur audio**              | Lecteur de musique avec playlist           |
 | 🧮 **Calculatrice**               | Interface de calcul                        |
 
-## 📚 Ce que je suis en train d'apprendre
+## 📚 Ce que j'ai appris
 - ✔️ Maîtrise des bases fondamentales de JavaScript
 - ✔️ Création d’interfaces dynamiques sans librairie
 - ✔️ Appels d’API et traitement de données en temps réel
