@@ -11,19 +11,48 @@
 
     <body>
         <section class="work section">
-            <h2 class="section__title">Projets JavaScript</h2>
+            <h1 class="section__title">Projets JavaScript</h2>
 
             <div class="work__container container grid">
                 <!-- P1: Prêt bancaire -->
                 <article class="work__card">
-                    <a href="./projects/1.App-pret-bancaire/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P1.webp" alt="Work 1" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-bank-line work__icon-style"></i>
-                        Prêt bancaire</h2>
-                    <span class="work__subtitle">Simulateur de prêt bancaire.</span>
+                        Prêt bancaire
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button" id="open-modal">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container" id="modal-container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P1-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 1</h2>
+                                <p class="modal__description">Simulateur de prêt bancaire.</p>
+                                <div class="modal__buttons">
+                                    <button class="modal__button modal__button-width">
+                                        <a href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/1.App-pret-bancaire" target="_blank">
+                                            Code Source
+                                        </a>
+                                    </button>
+                                    <button class="modal__button modal__button-width">
+                                        <a href="./projects/1.App-pret-bancaire/index.html" target="_blank">
+                                            Aperçu
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P2: App de météo -->
@@ -146,7 +175,7 @@
                     <span class="work__subtitle">Minuteur de productivité.</span>
                 </article>
 
-                <!-- P12: Génératuer de password -->
+                <!-- P12: Générateur de password -->
                 <article class="work__card">
                     <a href="./projects/12.Generateur-de-mot-de-passe/index.html" target="_blank" class="work__link">
                         <img src="./assets/img/P12.webp" alt="Work 12" class="work__img">
@@ -154,7 +183,7 @@
                     </a>
                     <h2 class="work__title">
                         <i class="ri-lock-password-line work__icon-style"></i>
-                        Génératuer de password</h2>
+                        Générateur de password</h2>
                     <span class="work__subtitle">Génératuer de mots de passe sécurisés.</span>
                 </article>
 
@@ -256,6 +285,7 @@
             </div>
         </section>
 
+        <script src="./script.js"></script>
     </body>
 </html>
 
