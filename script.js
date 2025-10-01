@@ -1,23 +1,39 @@
-/*=============== SHOW MODAL ===============*/
-const showModal = (openButton, modalContent) => {
-    const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent)
+/*=============== MODALS (multi-cartes) ===============*/
+// Gère ouverture/fermeture par carte, sans IDs dupliqués
+(function initModals() {
+    const modalBlocks = document.querySelectorAll('.modal.modal-btn-container');
 
-    if (openBtn && modalContainer) {
-        openBtn.addEventListener("click", () => {
-            modalContainer.classList.add("show-modal")
-        })
-    }
-}
+    modalBlocks.forEach((block) => {
+        const openBtn = block.querySelector('.modal__button');
+        const container = block.querySelector('.modal__container');
+        const closeEls = block.querySelectorAll('.close-modal');
 
-showModal("open-modal", "modal-container")
+        if (!openBtn || !container) return;
 
-/*=============== CLOSE MODAL ===============*/
-const closeBtn = document.querySelectorAll(".close-modal")
+        openBtn.addEventListener('click', () => {
+        container.classList.add('show-modal');
+        });
 
-function closeModal() {
-    const modalContainer = document.getElementById("modal-container")
-    modalContainer.classList.remove("show-modal")
-}
+        // Fermer via les éléments de fermeture (croix, boutons…)
+        closeEls.forEach((el) => {
+        el.addEventListener('click', () => {
+            container.classList.remove('show-modal');
+            });
+        });
 
-closeBtn.forEach(c => c.addEventListener("click", closeModal))
+        // Fermer en cliquant hors du contenu
+        container.addEventListener('click', (e) => {
+        const content = container.querySelector('.modal__content');
+        if (e.target === container && content) {
+            container.classList.remove('show-modal');
+            }
+        });
+    });
+
+    // Fermer avec Échap
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+        document.querySelectorAll('.modal__container.show-modal').forEach((c) => c.classList.remove('show-modal'));
+        }
+    });
+})();

@@ -105,7 +105,10 @@ a {
 
 /*=============== WORK ===============*/
 .work__container {
-    row-gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    min-width: 0;
 }
 .work__link {
     display: inline-block;
@@ -260,28 +263,21 @@ a {
         margin-inline: 1rem;
     }
 }
-
 /* For medium devices */
 @media screen and (min-width: 576px) {
     .work__container {
-        grid-template-columns: 350px;
+        /* grid-template-columns: 350px; */
         justify-content: center;
     }
     .modal__content {
         margin: auto;
         width: 380px;
-        border-radius: 1,25rem;
+        border-radius: 1.25rem;
     }
     .modal__img {
         width: 170px;
     }
 }
-@media screen and (min-width: 768px) {
-    .work__container {
-        grid-template-columns: repeat(2, 350px);
-    }
-}
-
 /* For large devices */
 @media screen and (min-width: 1150px) {
     .container {

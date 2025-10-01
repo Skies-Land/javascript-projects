@@ -3,15 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Landing page de 20 mini-projets JavaScript">
+        <meta name="author" content="Skies-Land">
+
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+        <link rel="icon" type="image/png" href="./assets/favicon.png">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
         <title>Projets JavaScript</title>
     </head>
 
     <body>
         <section class="work section">
-            <h1 class="section__title">Projets JavaScript</h2>
+            <h1 class="section__title">Projets JavaScript</h1>
 
             <div class="work__container container grid">
                 <!-- P1: Prêt bancaire -->
@@ -27,10 +31,10 @@
 
                     <!-- Modal -->
                     <div class="modal modal-btn-container">
-                        <button class="modal__button" id="open-modal">
+                        <button class="modal__button">
                             En savoir plus
                         </button>
-                        <div class="modal__container" id="modal-container">
+                        <div class="modal__container">
                             <div class="modal__content">
                                 <div class="modal__close close-modal" title="Close">
                                     <i class="ri-close-large-line"></i>
@@ -38,17 +42,24 @@
                                 <img src="./assets/modal-img/P1-modal-img.png" alt="Image modal" class="modal__img">
                                 <h2 class="modal__title">PROJET 1</h2>
                                 <p class="modal__description">Simulateur de prêt bancaire.</p>
+                                <!-- BUTTONS -->
                                 <div class="modal__buttons">
-                                    <button class="modal__button modal__button-width">
-                                        <a href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/1.App-pret-bancaire" target="_blank">
-                                            Code Source
-                                        </a>
-                                    </button>
-                                    <button class="modal__button modal__button-width">
-                                        <a href="./projects/1.App-pret-bancaire/index.html" target="_blank">
-                                            Aperçu
-                                        </a>
-                                    </button>
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/1.App-pret-bancaire" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/1.App-pret-bancaire/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -57,230 +68,913 @@
 
                 <!-- P2: App de météo -->
                 <article class="work__card">
-                    <a href="./projects/2.App-meteo/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P2.webp" alt="Work 2" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-sun-line work__icon-style"></i>
-                        App météo</h2>
-                    <span class="work__subtitle">Application pour simuler la météo en temps réel.</span>
+                        App météo
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P2-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 2</h2>
+                                <p class="modal__description">App météo simulant la réponse d'une API.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/2.App-meteo" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/2.App-meteo/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P3: Quizz -->
                 <article class="work__card">
-                    <a href="./projects/3.Quizz/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P3.webp" alt="Work 3" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-question-fill work__icon-style"></i>
-                        Quizz</h2>
-                    <span class="work__subtitle">Jeu de quiz interactif.</span>
+                        Quiz
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P3-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 3</h2>
+                                <p class="modal__description">Jeu de quiz interactif.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/3.Quizz" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/3.Quizz/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P4: Recherche sur Wikipedia -->
                 <article class="work__card">
-                    <a href="./projects/4.Recherche-Wikipedia/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P4.webp" alt="Work 4" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-search-line work__icon-style"></i>
                         Recherche Wikipedia</h2>
-                    <span class="work__subtitle">Moteur de recherche avec l'API Wikipedia.</span>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P4-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 4</h2>
+                                <p class="modal__description">Moteur de recherche avec l'API Wikipedia.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/4.Recherche-Wikipedia" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/4.Recherche-Wikipedia/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P5: Usine à cookie -->
                 <article class="work__card">
-                    <a href="./projects/5.Usine-a-cookie/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P5.webp" alt="Work 5" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-pie-chart-2-fill work__icon-style"></i>
-                        Générateur de cookie</h2>
-                    <span class="work__subtitle">Gestion de cookies côté client.</span>
+                        Générateur de cookie
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P5-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 5</h2>
+                                <p class="modal__description">Gestion de cookies côté client.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/5.Usine-a-cookie" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/5.Usine-a-cookie/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P6: Générateur de dégradés -->
                 <article class="work__card">
-                    <a href="./projects/6.Generateur-de-degrades/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P6.webp" alt="Work 6" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-palette-line work__icon-style"></i>
-                        Générateur de dégradés</h2>
-                    <span class="work__subtitle">Outil pour créer des dégradés CSS.</span>
+                        Générateur de dégradés
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P6-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 6</h2>
+                                <p class="modal__description">Outil pour créer des dégradés CSS.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/6.Generateur-de-degrades" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/6.Generateur-de-degrades/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P7: Slider animé -->
                 <article class="work__card">
-                    <a href="./projects/7.Slider-anime/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P7.webp" alt="Work 7" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-slideshow-view work__icon-style"></i>
-                        Slider animé</h2>
-                    <span class="work__subtitle">Carrousel d'images animés.</span>
+                        Slider animé
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P7-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 7</h2>
+                                <p class="modal__description">Carrousel d'images animé.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/7.Slider-anime" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/7.Slider-anime/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P8: Validation formulaire -->
                 <article class="work__card">
-                    <a href="./projects/8.Validation-formulaire/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P8.webp" alt="Work 8" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-checkbox-circle-line work__icon-style"></i>
-                        Validation formulaire</h2>
-                    <span class="work__subtitle">Script de validation de formulaire.</span>
+                        Validation formulaire
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P8-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 8</h2>
+                                <p class="modal__description">Script de validation de formulaire.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/8.Validation-formulaire" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/8.Validation-formulaire/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P9: Jeu des cartes mémoires -->
                 <article class="work__card">
-                    <a href="./projects/9.Jeu-des-cartes-memoires/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P9.webp" alt="Work 9" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-sim-card-2-fill work__icon-style"></i>
-                        Carte mémoire</h2>
-                    <span class="work__subtitle">Jeu de mémoire avec des cartes.</span>
+                        Cartes mémoire
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P9-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 9</h2>
+                                <p class="modal__description">Jeu de mémoire avec des cartes.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/9.Jeu-des-cartes-memoires" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/9.Jeu-des-cartes-memoires/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P10: Scroll infini -->
                 <article class="work__card">
-                    <a href="./projects/10.Scroll-infini/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P10.webp" alt="Work 10" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-expand-up-down-line work__icon-style"></i>
-                        Scroll infini</h2>
-                    <span class="work__subtitle">Page d'affichage d'images infini.</span>
+                        Scroll infini
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P10-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 10</h2>
+                                <p class="modal__description">Page d'affichage d'images infinie.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/10.Scroll-infini" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/10.Scroll-infini/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P11: Pomodoro -->
                 <article class="work__card">
-                    <a href="./projects/11.Pomodoro/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P11.webp" alt="Work 11" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-timer-fill work__icon-style"></i>
-                        Pomodoro</h2>
-                    <span class="work__subtitle">Minuteur de productivité.</span>
+                        Pomodoro
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P11-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 11</h2>
+                                <p class="modal__description">Minuteur de productivité.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/11.Pomodoro" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/11.Pomodoro/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P12: Générateur de password -->
                 <article class="work__card">
-                    <a href="./projects/12.Generateur-de-mot-de-passe/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P12.webp" alt="Work 12" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-lock-password-line work__icon-style"></i>
-                        Générateur de password</h2>
-                    <span class="work__subtitle">Génératuer de mots de passe sécurisés.</span>
+                        Générateur de password
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P12-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 12</h2>
+                                <p class="modal__description">Générateur de mots de passe sécurisés.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/12.Generateur-de-mot-de-passe" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/12.Generateur-de-mot-de-passe/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P13: Liste de filtrage -->
                 <article class="work__card">
-                    <a href="./projects/13.Liste-filtrable/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P13.webp" alt="Work 13" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-list-settings-line work__icon-style"></i>
-                        Liste d'utilisateurs</h2>
-                    <span class="work__subtitle">Liste d'utilisateurs avec filtre dynamique.</span>
+                        Liste d'utilisateurs
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P13-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 13</h2>
+                                <p class="modal__description">Liste d'utilisateurs avec filtre dynamique.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/13.Liste-filtrable" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/13.Liste-filtrable/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P14: Lecteur vidéo -->
                 <article class="work__card">
-                    <a href="./projects/14.Lecteur-video/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P14.webp" alt="Work 14" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-play-circle-fill work__icon-style"></i>
-                        Lecteur vidéo</h2>
-                    <span class="work__subtitle">Lecteur vidéo personnalisé.</span>
+                        Lecteur vidéo
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P14-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 14</h2>
+                                <p class="modal__description">Lecteur vidéo personnalisé.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/14.Lecteur-video" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/14.Lecteur-video/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P15: Jeu du morpion -->
                 <article class="work__card">
-                    <a href="./projects/15.Jeu-du-morpion/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P15.webp" alt="Work 15" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-close-large-fill work__icon-style"></i>
-                        Jeu du morpion</h2>
-                    <span class="work__subtitle">Le jeu classique du morpion.</span>
+                        Jeu du morpion
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P15-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 15</h2>
+                                <p class="modal__description">Le jeu classique du morpion.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/15.Jeu-du-morpion" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/15.Jeu-du-morpion/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P16: Particules -->
                 <article class="work__card">
-                    <a href="./projects/16.Particules/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P16.webp" alt="Work 16" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-color-filter-fill work__icon-style"></i>
-                        Particules</h2>
-                    <span class="work__subtitle">Animation de particules en JS.</span>
+                        Particules
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P16-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 16</h2>
+                                <p class="modal__description">Animation de particules en JS.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/16.Particules" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/16.Particules/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P17: Animations JavaScript -->
                 <article class="work__card">
-                    <a href="./projects/17.Animations-javascript/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P17.webp" alt="Work 17" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-sparkling-2-line work__icon-style"></i>
-                        Animations JavaScript</h2>
-                    <span class="work__subtitle">Landing page d'animations JavaScript.</span>
+                        Animations JavaScript
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P17-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 17</h2>
+                                <p class="modal__description">Landing page d'animations JavaScript.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/17.Animations-javascript" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/17.Animations-javascript/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P18: Turbo clavier -->
                 <article class="work__card">
-                    <a href="./projects/18.Turbo-clavier/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P18.webp" alt="Work 18" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-keyboard-box-fill work__icon-style"></i>
-                        Turbo clavier</h2>
-                    <span class="work__subtitle">Jeu de dactylographie.</span>
+                        Turbo clavier
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P18-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 18</h2>
+                                <p class="modal__description">Jeu de dactylographie.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/18.Turbo-clavier" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/18.Turbo-clavier/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P19: Lecteur audio -->
                 <article class="work__card">
-                    <a href="./projects/19.Lecteur-audio/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P19.webp" alt="Work 19" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-music-fill work__icon-style"></i>
-                        Lecteur audio</h2>
-                    <span class="work__subtitle">Lecteur audio personnalisé.</span>
+                        Lecteur audio
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P19-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 19</h2>
+                                <p class="modal__description">Lecteur audio personnalisé.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/19.Lecteur-audio" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/19.Lecteur-audio/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- P20: Calculatrice -->
                 <article class="work__card">
-                    <a href="./projects/20.Calculatrice/index.html" target="_blank" class="work__link">
+                    <div class="work__link">
                         <img src="./assets/img/P20.webp" alt="Work 20" class="work__img">
                         <i class="ri-arrow-right-circle-line work__icon"></i>
-                    </a>
+                    </div>
                     <h2 class="work__title">
                         <i class="ri-calculator-fill work__icon-style"></i>
-                        Calculatrice</h2>
-                    <span class="work__subtitle">Une simple calculatrice similaire à Windows.</span>
+                        Calculatrice
+                    </h2>
+
+                    <!-- Modal -->
+                    <div class="modal modal-btn-container">
+                        <button class="modal__button">
+                            En savoir plus
+                        </button>
+                        <div class="modal__container">
+                            <div class="modal__content">
+                                <div class="modal__close close-modal" title="Close">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                                <img src="./assets/modal-img/P20-modal-img.png" alt="Image modal" class="modal__img">
+                                <h2 class="modal__title">PROJET 20</h2>
+                                <p class="modal__description">Une simple calculatrice similaire à Windows.</p>
+                                <div class="modal__buttons">
+                                    <!-- BUTTONS -->
+                                    <a 
+                                        href="https://github.com/Skies-Land/javascript-projects/tree/main/projects/20.Calculatrice" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Code Source
+                                    </a>
+                                    <a 
+                                        href="./projects/20.Calculatrice/index.html" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="modal__button modal__button-width"
+                                    >
+                                        Aperçu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
